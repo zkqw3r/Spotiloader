@@ -21,14 +21,22 @@
   *example of work*
 </div>
 
-## ⚙️ Installation
 
-### Clone the repository:
+## 🚀 Installation and launch
+
+### Option 1: Ready EXE (for Windows)
+1. Download the latest release from [Releases section](https://github.com/zkqw3r/Spotiloader/releases/tag/Spotiloader)
+2. Unzip the folder
+3. Run `Spotiloader.exe`
+
+### Option 2: From source
+
+#### Clone the repository:
    ```bash
    git clone https://github.com/zkqw3r/Spotiloader
    cd spotiloader
    ```
-### Create a virtual environment and install dependencies:
+#### Create a virtual environment and install dependencies:
 
 ```bash
 python -m venv venv
@@ -38,16 +46,28 @@ venv\Scripts\activate      # Windows
 ```
 pip install -r requirements.txt
 ```
-### Create a .env file in the root of your project and specify your Spotify API keys:
+#### Create a .env file in the root of your project and specify your Spotify API keys:
 
 ```
 clientId=your_client_id
 clientSecret=your_client_secret
 ```
 
-## ▶️ Start app
+#### ▶️ Start app
 ```bash
 python app/gui.py
+```
+
+## ❗Warning❗
+### On Linux you may have the error: ModuleNotFoundError: No module named 'tkinter'
+### even after installing all dependencies, in which case:
+### For Ubuntu or other distros with Apt:
+```bash
+sudo apt-get install python3-tk
+```
+### For Fedora:
+```bash
+sudo dnf install python3-tkinter
 ```
 
 ## 📂 Project structure
